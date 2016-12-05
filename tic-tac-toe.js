@@ -26,11 +26,11 @@
   5 6 7 = horizontal row 2
 */
 
-const board = [0, 2, 1,
-               2, 1, 0,
-               1, 2, 0];
+let originalBoard = [0, 0, 0,
+                     0, 0, 0,
+                     0, 0, 0];
 
-const drawBoard = () => {
+const drawBoard = board => {
   let drawing = '';
   let mark = '';
   for (const [index, value] of board.entries()) {
@@ -54,7 +54,10 @@ const drawBoard = () => {
   console.log(drawing);
 };
 
-drawBoard();
+let testBoard = [0, 2, 1,
+                 2, 1, 0,
+                 1, 2, 0];
+drawBoard(testBoard);
 
 // const readline = require('readline');
 // let currentAnswer = 'default';
