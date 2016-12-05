@@ -59,6 +59,7 @@ let testBoard = [0, 2, 1,
                  1, 2, 0];
 drawBoard(testBoard);
 
+// testing the ability to get prompts from the user on the command line
 // const readline = require('readline');
 // let currentAnswer = 'default';
 
